@@ -10,7 +10,21 @@ st.set_page_config(
 
 
 st.title("Algorithms overview")
+st.header("Mask R-CNN")
+st.image("./assets/rcnn.png", caption="Mask R-CNN architecture", use_column_width=True)
+st.markdown(
+    """The RCNN (Region-based Convolutional Neural Network) is a type of deep learning model used for identifying and categorizing objects in images. 
+It combines a convolutional neural network (CNN), which is good at processing images and extracting features like edges and textures, with a method
+that proposes regions where objects might be. The key mathematical operation in its convolutional layers is the convolution, which involves applying
+filters over the image to create feature maps. These feature maps are then used to locate and identify objects. During training, the model uses a
+process called differentiation in these layers to adjust its filters, improving its ability to recognize different objects. This makes RCNN effective
+for tasks like detecting multiple objects in an image and understanding their positions and categories.
+"""
+)
+
+
 st.header("Stochastic gradient descent")
+st.image("./assets/sgd.gif", caption="Stochastic gradient descent convergence", use_column_width=True)
 st.markdown(
     """
 > **Definition 1.** The random vector $ u^k $ is designated as the stochastic gradient of the function $ f(x) $ at the point $ x = x^k $ if
@@ -84,6 +98,7 @@ From the empirical point of view, default estimation terms for the algorithm are
 For the given optimization problem, the approach with adaptive estimations for learning rate $ \lambda $ and for momentum will result in not only efficient convergence on the sparse data but also in adaptive decay of the momentum when the algorithm is approaching the minimum point (so the algorithm will not jump over the minimum, unlike pure momentum algorithm).
     """
 )
+st.image("./assets/convergence.gif", caption="Algorithms convergence per iteration on test function", use_column_width=True)
 
 st.header("Finite-difference smoothing algorithm (FinD)")
 st.markdown(

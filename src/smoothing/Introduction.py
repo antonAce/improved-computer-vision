@@ -17,7 +17,7 @@ st.markdown(
 The project, under the "Applied Modeling" course, integrates emerging trends in optimization theory with pertinent challenges in deep learning. The objective is 
 to implement a modified gradient descent algorithm, as proposed in the [paper](https://arxiv.org/abs/2308.08422), within the widely-used deep learning framework, 
 [PyTorch](https://pytorch.org/). This implementation will be applied to address the object detection problem in [Swin Transformers](https://browse.arxiv.org/pdf/2103.14030.pdf), 
-trained on the [COCO dataset](https://www.v7labs.com/blog/coco-dataset-guide).
+trained on the [COCO vehicles dataset](https://www.v7labs.com/blog/coco-dataset-guide).
 """
 )
 st.video("./assets/yolo_demo_crop.mp4")
