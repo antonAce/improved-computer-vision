@@ -10,7 +10,7 @@ st.set_page_config(
 
 
 st.title("Algorithms overview")
-st.header("Mask R-CNN")
+st.header("Region-based Convolutional Neural Network")
 st.image("./assets/rcnn.png", caption="Mask R-CNN architecture", use_column_width=True)
 st.markdown(
     """The RCNN (Region-based Convolutional Neural Network) is a type of deep learning model used for identifying and categorizing objects in images. 
